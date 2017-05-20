@@ -1,0 +1,223 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Web Application Development</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/beige.css">
+        <link rel="stylesheet" href="css/mod.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="zoom">
+					<h1>Web Application Development</h1>
+					<h3>Basics</h3>
+				</section>
+
+                <section>
+                    <h2>Web Apps</h2>
+                    <p>Modern Web Applications use technology standards</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="fragment" data-fragment-index="1" style="text-align:center">Frontend</th>
+                                <th class="fragment" data-fragment-index="2" style="text-align:center">Backend</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td class="fragment" data-fragment-index="1">
+                                HTML 5<br />
+                                CSS 3
+                            </td>
+                            <td class="fragment" data-fragment-index="2">
+                                REST Service
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fragment" data-fragment-index="3" colspan="2" style="text-align:center">
+                                JavaScript<br />
+                                HTTP
+                            </td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section data-background-color="rgba(255, 0, 0, 0.05)">
+                    <h2>HTML 5 <img src="img/html5.png" class="inline" /></h2>
+
+                    <section>
+                        <h2>Hypertext Markup Language V5</h2>
+                        <p>Provides structure and content for websites</p>
+                    </section>
+
+                    <section>
+                        <h4>Hello World - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtml">examples/html1.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Hello World - Output</h4>
+                        <iframe src="examples/html1.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>Example 2 - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtml">examples/html2.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Example 2 - Output</h4>
+                        <iframe src="examples/html2.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>Tables - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtmlBody">examples/html-tables.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Tables - Output</h4>
+                        <iframe src="examples/html-tables.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>Forms 1 - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtmlBody">examples/html-forms1.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Forms 1 - Output</h4>
+                        <iframe src="examples/html-forms1.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>Forms 2 - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtmlBody">examples/html-forms2.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Forms 2 - Output</h4>
+                        <iframe src="examples/html-forms2.html"></iframe>
+                    </section>
+                </section>
+
+                <section data-background-color="rgba(0, 0, 255, 0.05)">
+                    <h2>CSS <img src="img/css3.png" class="inline" /></h2>
+                    <section>
+
+                        <h2>Cascading Stylesheets</h2>
+                        <p>Provide styling for elements</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Hypertext Transfer Protocol</h2>
+                        <ul>
+                            <li>Sends files across network</li>
+                        </ul>
+                    </section>
+                    <section>
+                        test
+                    </section>
+
+
+                </section>
+
+                <section>
+                    <h3>REST</h3>
+
+
+                </section>
+
+                <section>
+                    <h3>JavaScript / ECMA Script</h3>
+
+
+                </section>
+
+                <section>
+                    <h3>JSON</h3>
+
+
+                </section>
+
+                <section>
+                    <h3>HTTP</h3>
+
+
+                </section>
+
+                <section>
+                    <h3>HTTP</h3>
+
+
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+
+        <script>
+            function escapeHtml(path) {
+                $.get(path, function(data) {
+                    window.print($('<div/>').text(data).html());
+                });
+            }
+
+            $('code.escapeHtml').each(function () {
+                var elem = $(this)
+                var path = elem.html()
+                $.get(path, function(data) {
+                    elem.html($('<div/>').text(data).html());
+                });
+            });
+            $('code.escapeHtmlBody').each(function () {
+                var elem = $(this)
+                var path = elem.html()
+                $.get(path, function (data) {
+                    var bodyRegExp = /<body>([\s\S]*)<\/body>/m;
+                    var match = bodyRegExp.exec(data);
+                    elem.html($('<div/>').text(match[1]).html());
+                });
+            });
+        </script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                history: true,
+                center: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

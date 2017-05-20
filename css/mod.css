@@ -1,0 +1,31 @@
+﻿.reveal section img.inline {
+    height: 1em;
+    margin:0;
+    background:none;
+    border: none;
+    box-shadow:none;
+}
+
+iframe {
+    background: white;
+    height: 60%;
+    width: 60%;
+    box-shadow: 5px 5px 20px #888888;
+         -ms-zoom: 1.5;
+        -moz-transform: scale(1.5);
+        -moz-transform-origin: 50% 50%;
+        -o-transform: scale(1.5);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(1.5);
+        -webkit-transform-origin: 50% 0;
+}
+
+body {
+  background: #f7f2d3;
+  background: -moz-radial-gradient(center, circle cover, white 0%, #f0f0f0 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f0f0f0));
+  background: -webkit-radial-gradient(center, circle cover, white 0%, #f0f0f0 100%);
+  background: -o-radial-gradient(center, circle cover, white 0%, #f0f0f0 100%);
+  background: -ms-radial-gradient(center, circle cover, white 0%, #f0f0f0 100%);
+  background: radial-gradient(center, circle cover, white 0%, #f0f0f0 100%);
+  background-color: #f7f3de; }
