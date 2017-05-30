@@ -1,0 +1,1 @@
+﻿$.get("http://www.google.com");

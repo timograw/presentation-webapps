@@ -48,7 +48,8 @@
                                 CSS 3
                             </td>
                             <td class="fragment" data-fragment-index="2">
-                                REST Service
+                                REST Service<br />
+                                WebSocket
                             </td>
                         </tr>
                         <tr>
@@ -62,11 +63,15 @@
                 </section>
 
                 <section data-background-color="rgba(255, 0, 0, 0.05)">
-                    <h2>HTML 5 <img src="img/html5.png" class="inline" /></h2>
+                    <h2>HTML <img src="img/html5.png" class="inline" /></h2>
 
                     <section>
-                        <h2>Hypertext Markup Language V5</h2>
-                        <p>Provides structure and content for websites</p>
+                        <h2>Hypertext Markup Language</h2>
+                        <h3>Version 5</h3>
+                         <ul>
+                            <li>Provides structure and content for websites</li>
+                            <li>Supported by all modern browsers (even IE6!)</li>
+                        </ul>
                     </section>
 
                     <section>
@@ -87,6 +92,16 @@
                     <section>
                         <h4>Example 2 - Output</h4>
                         <iframe src="examples/html2.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>Example 3 - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtml">examples/html3.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Example 3 - Output</h4>
+                        <iframe src="examples/html3.html"></iframe>
                     </section>
 
                     <section>
@@ -123,55 +138,172 @@
                 <section data-background-color="rgba(0, 0, 255, 0.05)">
                     <h2>CSS <img src="img/css3.png" class="inline" /></h2>
                     <section>
-
                         <h2>Cascading Stylesheets</h2>
-                        <p>Provide styling for elements</p>
+                        <p>Provides styling for elements</p>
+                    </section>
+
+                    <section>
+                        <h4>Example 1 - Sourcecode</h4>
+                        <pre><span class="prehead">HTML file</span><code data-trim data-noescape class="escapeHtml">examples/css1.html</code></pre>
+                        <pre><span class="prehead">CSS file</span><code data-trim data-noescape class="escapeHtml">examples/css1.css</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Example 1 - Output</h4>
+                        <iframe src="examples/css1.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>Example 2 - Sourcecode</h4>
+                        <pre><span class="prehead">HTML file body content</span><code data-trim data-noescape class="escapeHtmlBody">examples/css2.html</code></pre>
+                        <pre><span class="prehead">CSS file</span><code data-trim data-noescape class="escapeHtml">examples/css2.css</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Example 2 - Output</h4>
+                        <iframe src="examples/css2.html"></iframe>
                     </section>
                 </section>
 
                 <section>
+                    <h2>HTTP <img src="img/http.png" class="inline" /></h2>
                     <section>
-                        <h2>Hypertext Transfer Protocol</h2>
+                        <h2>Hypertext Transfer Protocol </h2>
                         <ul>
-                            <li>Sends files across network</li>
+                            <li>Transfers files across networks</li>
+                            <li>File locations are URLs</li>
                         </ul>
                     </section>
+
                     <section>
-                        test
+                        <h4>Example</h4>
+                        <pre><span class="prehead">Client Request</span><code data-trim data-noescape>GET /index.html HTTP/1.1
+Host: www.example.com</code></pre>
+
+                        <pre><span class="prehead">Server Response</span><code data-trim data-noescape>HTTP/1.1 200 OK
+Date: Mon, 23 May 2005 22:38:34 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Encoding: UTF-8
+Content-Length: 138
+Last-Modified: Wed, 08 Jan 2003 23:11:55 GMT
+Server: Apache/1.3.3.7 (Unix) (Red-Hat/Linux)
+Connection: close
+
+..HTML content..
+</code></pre>
                     </section>
 
+                    <section>
+                        <h4>Methods</h4>
+                        <table>
+                            <tr>
+                                <th>GET</th>
+                                <td>Load Resource</td>
+                            </tr>
+                            <tr>
+                                <th>HEAD</th>
+                                <td>Load only header</td>
+                            </tr>
+                            <tr>
+                                <th>POST</th>
+                                <td>Create new resource</td>
+                            </tr>
+                            <tr>
+                                <th>PUT</th>
+                                <td>Update specific resource</td>
+                            </tr>
+                            <tr>
+                                <th>DELETE</th>
+                                <td>Delete resource</td>
+                            </tr>
+                            <tr>
+                                <th>...</th>
+                                <td>There are more...</td>
+                            </tr>
+                        </table>
+   
+                    </section>
 
                 </section>
 
                 <section>
-                    <h3>REST</h3>
+                    <h2>REST <img src="img/rest.png" class="inline" /></h2>
 
+                    <section>
+                        <h2>Representational State Transfer</h2>
+                        <p>Combination of HTTP & Services<br />(in our case)</p>
+                    </section>
 
-                </section>
+                    <section>
+                        <p>A Resource or part of resource can be represented by an URL</p>
+                        <pre><span class="prehead">List of shipments (Collection)</span><code data-trim data-noescape>http://hellmann.com/shipments/</code></pre>
+                        <pre><span class="prehead">Specific shipment</span><code data-trim data-noescape>http://hellmann.com/shipment/12345</code></pre>
+                        <pre><span class="prehead">Destination agent</span><code data-trim data-noescape>http://hellmann.com/shipment/12345#destinationagent</code></pre>
+                    </section>
 
-                <section>
-                    <h3>JavaScript / ECMA Script</h3>
-
-
-                </section>
-
-                <section>
-                    <h3>JSON</h3>
-
-
-                </section>
-
-                <section>
-                    <h3>HTTP</h3>
-
+                    <section>
+                        <p>Use HTTP Methods to GET, PUT, POST, DELETE Resources</p>
+                        <p>Resources are serialized in XML or JSON</p>
+                    </section>
 
                 </section>
 
                 <section>
-                    <h3>HTTP</h3>
+                    <h2>WebSocket <img src="img/websocket.png" class="inline" /></h2>
 
+                    <section>
+                        <p>Longterm realtime TCP connection from browser to websocket server</p>
+                    </section>
 
                 </section>
+
+                <section data-background-color="rgba(255, 255, 0, 0.05)">
+                    <h2>JavaScript <img src="img/javascript.png" class="inline" /></h2>
+
+                    <section>
+                        <h3>Ecma Script</h3>
+                    </section>
+
+                    <section>
+                        <h3>JSON</h3>
+                        <h4>JavaScript Object Notation</h4>
+                        <ul>
+                            <li>Objects: <code>{"field": "value", ...}</code></li>
+                            <li>Arrays: <code>["item1", "item2", ...]</code></li>
+                        </ul>
+                        <pre><code data-trim data-noescape>{"name": "Timo", "age": 32, "hobbies": ["Computer", "TV"]}</code></pre>
+                        <p>Serialization in .NET via <a href="http://www.newtonsoft.com/json">Json.NET</a></p>
+                    </section>
+
+                    <section>
+                        <h3>TypeScript</h3>
+                        <p>Extends JavaScript with</p>
+                        <ul>
+                            <li>Strong Types</li>
+                            <li>Modules (Namespaces)</li>
+                            <li>Classes</li>
+                            <li>Interfaces</li>
+                            <li>Inheritance</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>TypeScript</h3>
+                        <p>Compiles into JavaScript</p>
+                    </section>
+                    
+
+                    <section>
+                        <h3>Same Origin Policy</h3>
+                        <p>Javascript can only access URLs that have the same domain</p>
+                        <code>http://www.hellmann.com/test.js</code>
+                        <pre><code data-trim data-noescape>$.get("http://www.hellmann.com/data.json"); // Success </code></pre>
+                        <pre><code data-trim data-noescape>$.get("data.json"); // Success </code></pre>
+                        <pre><code data-trim data-noescape>$.get("http://www.google.com"); // Error</code></pre>
+                    </section>
+
+                </section>
+
 			</div>
 		</div>
 

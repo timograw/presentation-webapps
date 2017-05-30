@@ -96,11 +96,15 @@
     <Content Include="css\theme\sky.css" />
     <Content Include="css\theme\solarized.css" />
     <Content Include="css\theme\white.css" />
+    <Content Include="examples\css1.css" />
     <Content Include="examples\html-forms2.html" />
     <Content Include="examples\html-forms1.html" />
     <Content Include="examples\html-tables.html" />
+    <Content Include="examples\css1.html" />
     <Content Include="examples\html2.html" />
     <Content Include="examples\html1.html" />
+    <Content Include="examples\html3.html" />
+    <Content Include="examples\javascript-sameorigin.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>

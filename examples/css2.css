@@ -1,0 +1,8 @@
+﻿div.shadow {
+    border: 1px solid gray; /* simple border */
+    box-shadow: 5px 5px 5px 0px rgba(255,0,0, 0.4); /* red shadow */
+}
+
+span.shadow {
+    text-shadow: 2px 2px 1px rgba(0,0,255, 0.4); /* blue shadow */
+}
