@@ -96,16 +96,24 @@
     <Content Include="css\theme\sky.css" />
     <Content Include="css\theme\solarized.css" />
     <Content Include="css\theme\white.css" />
+    <Content Include="examples\css2.css" />
+    <Content Include="examples\css2.html" />
     <Content Include="examples\css1.css" />
     <Content Include="examples\html-forms2.html" />
     <Content Include="examples\html-forms1.html" />
     <Content Include="examples\html-tables.html" />
     <Content Include="examples\css1.html" />
+    <Content Include="examples\javascript-jquery1.html" />
+    <Content Include="examples\javascript-jquery3.html" />
+    <Content Include="examples\javascript-jquery2.html" />
+    <Content Include="examples\javascript1.html" />
     <Content Include="examples\html2.html" />
     <Content Include="examples\html1.html" />
     <Content Include="examples\html3.html" />
     <Content Include="examples\javascript-sameorigin.js" />
     <Content Include="index.html" />
+    <Content Include="js\jquery-3.1.1.min.js" />
+    <Content Include="js\reveal.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

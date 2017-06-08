@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>JQuery 3</title>
+        <script src="../js/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+        <div id="output"></div>
+
+        <script>
+            $.get("javascript-jquery4-ajax-content.html", function (data) {
+                $("#output").html(data);
+            });
+        </script>
+    </body>
+</html>

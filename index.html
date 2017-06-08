@@ -133,6 +133,25 @@
                         <h4>Forms 2 - Output</h4>
                         <iframe src="examples/html-forms2.html"></iframe>
                     </section>
+
+                    <section>
+                        <h3>DOM</h3>
+                        <h4>Document Object Model</h4>
+                        <p>Programming interface to documents.</p>
+                        <p>A document is represented as a tree of objects with properties that can be read and modified.</p>
+                    </section>
+
+                    <section>
+                        <h3>DOM</h3>
+                        <h4>Example - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtml">examples/html4-dom.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>DOM</h3>
+                        <h4>Example - Objects</h4>
+                        <img src="img/397px-DOM_Beispielbaum.svg.png" />
+                    </section>
                 </section>
 
                 <section data-background-color="rgba(0, 0, 255, 0.05)">
@@ -170,8 +189,8 @@
                     <section>
                         <h2>Hypertext Transfer Protocol </h2>
                         <ul>
-                            <li>Transfers files across networks</li>
-                            <li>File locations are URLs</li>
+                            <li>Transfers data across networks</li>
+                            <li>Data locations are URLs</li>
                         </ul>
                     </section>
 
@@ -224,6 +243,16 @@ Connection: close
    
                     </section>
 
+                    <section>
+                        <h3>Cookies</h3>
+                        <p>Small chunks of data remembered by the browser</p>
+                        <p>Dependant on</p>
+                        <ul>
+                            <li>Url Location</li>
+                            <li>Possibly Date</li>
+                        </ul>
+                    </section>
+
                 </section>
 
                 <section>
@@ -261,7 +290,83 @@ Connection: close
                     <h2>JavaScript <img src="img/javascript.png" class="inline" /></h2>
 
                     <section>
-                        <h3>Ecma Script</h3>
+                        <p>standardized as <b>ECMAScript</b></p>
+                        <ul>
+                            <li class="fragment">C-like Syntax</li>
+                            <li class="fragment">Interpreted</li>
+                            <li class="fragment">Object oriented</li>
+                            <li class="fragment">Dynamicly typed</li>
+                            <li class="fragment">Prototypes instead of classes</li>
+                            <li class="fragment">Only one thread -> async programming</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>Hello World - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtml">examples/javascript1.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Hello World - Output</h4>
+                        <iframe src="examples/javascript1.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h3>JQuery</h3>
+                        <p>Very popular JS Library</p>
+                        <ul>
+                            <li>DOM traversal and manipulation</li>
+                            <li>Event handling</li>
+                            <li>Animation</li>
+                            <li>Ajax</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h4>jQuery 1 - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtmlBody">examples/javascript-jquery1.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>jQuery 1 - Output</h4>
+                        <iframe src="examples/javascript-jquery1.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>jQuery 2 - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtmlBody">examples/javascript-jquery2.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>jQuery 2 - Output</h4>
+                        <iframe src="examples/javascript-jquery2.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h4>jQuery 3 - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtmlBody">examples/javascript-jquery3.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>jQuery 3 - Output</h4>
+                        <iframe src="examples/javascript-jquery3.html"></iframe>
+                    </section>
+
+                    <section>
+                        <h3>Ajax</h3>
+                        <h5>Asynchronous JavaScript and XML</h5>
+                        <p>Concept for asynchronous data transfer on websites without reloading</p>
+                    </section>
+
+                    <section>
+                        <h4>Ajax Example - Sourcecode</h4>
+                        <pre><code data-trim data-noescape class="escapeHtmlBody">examples/javascript-jquery4-ajax.html</code></pre>
+                        <pre><span class="prehead">javascript-jquery4-ajax-content.html</span><code data-trim data-noescape class="escapeHtml">examples/javascript-jquery4-ajax-content.html</code></pre>
+                    </section>
+
+                    <section>
+                        <h4>Ajax Example - Output</h4>
+                        <iframe src="examples/javascript-jquery4-ajax.html"></iframe>
                     </section>
 
                     <section>
@@ -276,22 +381,9 @@ Connection: close
                     </section>
 
                     <section>
-                        <h3>TypeScript</h3>
-                        <p>Extends JavaScript with</p>
-                        <ul>
-                            <li>Strong Types</li>
-                            <li>Modules (Namespaces)</li>
-                            <li>Classes</li>
-                            <li>Interfaces</li>
-                            <li>Inheritance</li>
-                        </ul>
+                        <h4>Combine JS + JSON + Ajax + Rest</h4>
+                        <p>In JavaScript send/receive data formated as json to/from a rest service.</p>
                     </section>
-
-                    <section>
-                        <h3>TypeScript</h3>
-                        <p>Compiles into JavaScript</p>
-                    </section>
-                    
 
                     <section>
                         <h3>Same Origin Policy</h3>
@@ -300,6 +392,45 @@ Connection: close
                         <pre><code data-trim data-noescape>$.get("http://www.hellmann.com/data.json"); // Success </code></pre>
                         <pre><code data-trim data-noescape>$.get("data.json"); // Success </code></pre>
                         <pre><code data-trim data-noescape>$.get("http://www.google.com"); // Error</code></pre>
+                    </section>
+
+                    <section>
+                        <h3>TypeScript</h3>
+                        <p>Extends JavaScript with</p>
+                        <ul>
+                            <li>Strong Types</li>
+                            <li class="fragment">Modules (Namespaces)</li>
+                            <li class="fragment">Classes</li>
+                            <li class="fragment">Interfaces</li>
+                            <li class="fragment">Inheritance</li>
+                        </ul>
+                        <p class="fragment">Most of this in latest ECMAScript Version</p>
+                    </section>
+
+                    <section>
+                        <h3>TypeScript</h3>
+                        <p>Compiles into JavaScript</p>
+                    </section>
+
+                    <section>
+                        <h3>Node.js <img src="img/node.png" class="inline" /></h3>
+                        <ul>
+                            <li>Open-source, cross-platform JavaScript run-time environment</li>
+                            <li>Server side, no browser</li>
+                            <li>Frameworks for complete Web App in JavaScript</li>
+                            <li>Usefull for development, many tools</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Frameworks</h3>
+                        <p>There are many ;)</p>
+                        <ul>
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>Ember</li>
+                            <li>Meteor</li>
+                        </ul>
                     </section>
 
                 </section>
@@ -343,6 +474,8 @@ Connection: close
             Reveal.initialize({
                 history: true,
                 center: true,
+                width: 1280,
+                height: 720,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
